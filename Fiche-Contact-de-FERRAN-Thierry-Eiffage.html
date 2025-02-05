@@ -1,124 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#3498db">
-    <meta name="description" content="Carte de visite numérique de FERRAN Thierry - Personnalisable et pratique.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="styles.css" rel="stylesheet">
-    <title>VCard de FERRAN Thierry</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiche Contact</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-            margin: 0;
-            overflow: hidden;
+            text-align: center;
+            background-color: #f9f9f9;
+            padding: 20px;
         }
         .card {
             background: white;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            max-width: 400px;
-            width: 100%;
-            max-height: 90vh;
-            overflow-y: auto;
-            position: relative;
-        }
-        .logo {
-            width: 100px;
-            position: absolute;
-            top: 10px;
-            left: 10px;
-        }
-        .avatar {
-            background: red;
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 30px;
-            font-weight: bold;
-            margin: 50px auto 15px;
-        }
-        h1 {
-            font-size: 25px;
-            margin: 0;
-        }
-        .job {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 20px;
-            font-style: italic;
-        }
-        .info {
-            text-align: left;
-            margin-bottom: 10px;
-        }
-        .info label {
-            font-weight: bold;
-            font-size: 14px;
-            color: #FF0000;
-            text-decoration: underline;
-            text-decoration-thickness: 1.5px;
-        }
-        .info p {
-            margin: 5px 0;
-            color: black;
-            font-size: 14px;
-        }
-        .btn {
             display: inline-block;
-            background: #FF0000;
+        }
+        .contact-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: red;
             color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
             text-decoration: none;
-            font-weight: bold;
+            border-radius: 5px;
             margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <div class="card">
-        <img src="logo_eiffage.png" alt="Logo Eiffage" class="logo">
-        <div class="avatar">TF</div>
-        <h1>FERRAN Thierry</h1>
-        <p class="job">Directeur d'Agence</p>
-        
-        <div class="info">
-            <label>N° Mobile</label>
-            <p>06 19 40 69 75</p>
-        </div>
-        
-        <div class="info">
-            <label>Adresse de courrier</label>
-            <p>thierry.ferran@eiffage.com</p>
-        </div>
-        
-        <div class="info">
-            <label>Entreprise</label>
-            <p>Eiffage Construction Amélioration de l'Habitat</p>
-        </div>
-        
-        <div class="info">
-            <label>Adresse</label>
-            <p>Centre d'affaire "La Boursidière"<br>Rue de la Boursidiere - Bâtiment G / 2ème étage<br>92357 Le Plessis Robinson Cedex<br>France</p>
-        </div>
-        
-        <a href="https://raw.githubusercontent.com/StagiaireEiffage/Fiche-contact/main/FERRAN%20Thierry.vcf" class="btn" download>
-    AJOUTER LE CONTACT
-</a>
-
+        <img src="https://raw.githubusercontent.com/StagiaireEiffage/Fiche-contact/main/logo_eiffage.png" 
+             alt="Logo Eiffage" 
+             style="width: 150px; height: auto; display: block; margin: 0 auto;">
+        <h2>FERRAN Thierry</h2>
+        <p>Directeur d'Agence</p>
+        <p><strong>N° Mobile :</strong> 06 19 40 69 75</p>
+        <p><strong>Email :</strong> thierry.ferran@eiffage.com</p>
+        <p><strong>Entreprise :</strong> Eiffage Construction Amélioration de l'Habitat</p>
+        <p><strong>Adresse :</strong> Centre d'affaire "La Boursidière"<br>Rue de la Boursidière - Bâtiment G / 2ème étage<br>92357 Le Plessis Robinson Cedex, France</p>
+        <a class="contact-button" href="https://raw.githubusercontent.com/StagiaireEiffage/Fiche-contact/main/FERRAN%20Thierry.vcf" download="FERRAN_Thierry.vcf">AJOUTER LE CONTACT</a>
     </div>
 </body>
 </html>
+
