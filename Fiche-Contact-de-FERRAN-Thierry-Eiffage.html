@@ -17,6 +17,27 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: inline-block;
+            text-align: center;
+            max-width: 400px;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        .avatar {
+            width: 80px;
+            height: 80px;
+            background-color: red;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin: 10px auto;
         }
         .contact-button {
             display: inline-block;
@@ -31,11 +52,10 @@
 </head>
 <body>
     <div class="card">
-        <img src="https://raw.githubusercontent.com/StagiaireEiffage/Fiche-contact/main/logo_eiffage.png" 
-             alt="Logo Eiffage" 
-             style="width: 150px; height: auto; display: block; margin: 0 auto;">
+        <img class="logo" src="https://raw.githubusercontent.com/StagiaireEiffage/Fiche-contact/main/logo_eiffage.png" alt="Logo Eiffage">
+        <div class="avatar">TF</div>
         <h2>FERRAN Thierry</h2>
-        <p>Directeur d'Agence</p>
+        <p><em>Directeur d'Agence</em></p>
         <p><strong>N° Mobile :</strong> 06 19 40 69 75</p>
         <p><strong>Email :</strong> thierry.ferran@eiffage.com</p>
         <p><strong>Entreprise :</strong> Eiffage Construction Amélioration de l'Habitat</p>
